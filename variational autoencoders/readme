@@ -1,1 +1,23 @@
+The task:
+=============================================================
+Build a generative model, e.g. a VAE, that can encode an image (x) to a learned latent representation, z or q(z).
 
+We want this latent representation to be invariant to small transformations (small rotations (+/-10 degrees), scales (+/- 20%) and translations (+/- 4 pixels) i.e. q(z|x) = q(z|T(x)).
+
+The accompanying latent space should be appropriate for classification using a simple linear classifier, and the classification accuracy should be evaluated.
+
+The data:
+=============================================================
+Either Fashion MNIST or MNIST is fine, MedMNISTLinks to an external site. could also be an option or CIFAR.
+
+What to hand in:
+A 3 page (+ refs) report, and associated code that includes:
+
+A diagram/psuedocode explaining how the model processes data.
+plots of appropriate evaluation metrics.
+
+Some investigation of the effects of architectures, losses and components with ablation studies and suitable baselines.
+
+An investigation of model errors and common mistakes
+
+A list of references
